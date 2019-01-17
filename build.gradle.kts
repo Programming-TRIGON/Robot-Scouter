@@ -70,7 +70,7 @@ fun Project.configureKtlint() {
 }
 
 fun Project.configureAndroid() {
-    configurations.register("compileClasspath") // TODO see https://youtrack.jetbrains.com/issue/KT-27170
+    // configurations.register("compileClasspath") // TODO see https://youtrack.jetbrains.com/issue/KT-27170
 
     // Resource packaging breaks otherwise for some reason
     tasks.matching { it.name.contains("Test") }.configureEach { enabled = false }
